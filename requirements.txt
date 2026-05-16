@@ -1,0 +1,11 @@
+# Runtime dependencies for P2P-GeoThreatAtlas
+# Policy: current stable releases with conservative upper bounds.
+# Python: 3.11+
+
+networkx>=3.6.1,<4.0
+numpy>=2.4.5,<3.0
+pandas>=2.3.3,<3.0
+matplotlib>=3.10.9,<3.11
+folium>=0.20.0,<0.21
+plotly>=6.7.0,<7.0
+PyYAML>=6.0.3,<7.0

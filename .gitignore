@@ -1,0 +1,54 @@
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments / local env
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Generated outputs: regenerate via src/run_experiment.py and src/run_multi_seed.py
+outputs/
+!outputs/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/maps/.gitkeep
+!outputs/tables/.gitkeep
+
+# OS / archive noise
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+.tmp/
+tmp/
+temp/
+
+# Packaging
+build/
+dist/
+*.egg-info/

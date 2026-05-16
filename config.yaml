@@ -1,0 +1,43 @@
+model:
+  n_nodes: 50
+  x_range: [0.0, 100.0]
+  y_range: [0.0, 100.0]
+
+  # plane mode: условные единицы расстояния
+  radius: 15.0
+
+  # geo mode: метры
+  radius_m: 500.0
+
+  # k для k-NN графа
+  k_knn: 5
+
+  # Пример bbox: центральная часть Москвы
+  # Формат: [min_lon, min_lat, max_lon, max_lat]
+  bbox_moscow: [37.58, 55.72, 37.68, 55.78]
+
+scenarios:
+  baseline:
+    enabled: true
+  rogue:
+    n_malicious: 2
+    extra_radius_mult: 2.0
+  flooding:
+    n_flooders: 2
+    load_mult: 10.0
+  isolation:
+    n_isolate: 3
+    method: random
+  spoofing:
+    n_spoof: 1
+    extra_edges: 5
+
+experiment:
+  seed: 42
+  graph_types: [radius, knn]
+  coord_types: [plane, geo]  
+  multi_runs: 10  # если >1, запускает несколько seed
+
+output:
+  base_dir: outputs
+  
