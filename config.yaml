@@ -35,9 +35,9 @@ scenarios:
 experiment:
   seed: 42
   graph_types: [radius, knn]
-  coord_types: [plane, geo]  
+  coord_types: [plane, geo]
   multi_runs: 10  # если >1, запускает несколько seed
 
 output:
   base_dir: outputs
-  
+
