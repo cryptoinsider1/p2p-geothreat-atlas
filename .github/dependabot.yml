@@ -10,12 +10,13 @@ updates:
       timezone: "Europe/Zurich"
     open-pull-requests-limit: 3
     versioning-strategy: increase-if-necessary
-    labels:
-      - "dependencies"
-      - "python"
     commit-message:
       prefix: "deps"
       include: "scope"
+    ignore:
+      - dependency-name: "pandas"
+        update-types:
+          - "version-update:semver-major"
     groups:
       python-runtime:
         patterns:
@@ -40,9 +41,6 @@ updates:
       time: "05:15"
       timezone: "Europe/Zurich"
     open-pull-requests-limit: 3
-    labels:
-      - "dependencies"
-      - "github-actions"
     commit-message:
       prefix: "ci"
       include: "scope"
@@ -50,3 +48,4 @@ updates:
       github-actions:
         patterns:
           - "*"
+          
