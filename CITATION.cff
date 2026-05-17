@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "P2P-GeoThreatAtlas: Modeling and Visualization Toolkit for Geospatial Threat Scenarios in Mobile P2P Networks"
+authors:
+  - name: "Vladimir"
+repository-code: "https://github.com/cryptoinsider1/p2p-geothreat-atlas"
+url: "https://github.com/cryptoinsider1/p2p-geothreat-atlas"
+version: "v0.5.1-vkr"
+date-released: "2026-05-17"
+license: "MIT"
+abstract: "P2P-GeoThreatAtlas is a research prototype for modeling and visualizing threat scenarios in mobile peer-to-peer networks using graph-based topology, synthetic and geospatial coordinates, structural metrics, load anomalies, and multi-seed stability analysis."
+keywords:
+  - "P2P networks"
+  - "geospatial modeling"
+  - "graph analysis"
+  - "threat modeling"
+  - "network security"
+  - "mobile networks"
+  - "haversine"
+  - "k-NN graph"
+  - "radius graph"
