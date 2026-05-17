@@ -1,0 +1,52 @@
+version: 2
+
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "05:00"
+      timezone: "Europe/Zurich"
+    open-pull-requests-limit: 3
+    versioning-strategy: increase-if-necessary
+    labels:
+      - "dependencies"
+      - "python"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    groups:
+      python-runtime:
+        patterns:
+          - "networkx"
+          - "numpy"
+          - "pandas"
+          - "matplotlib"
+          - "folium"
+          - "plotly"
+          - "PyYAML"
+      python-dev:
+        patterns:
+          - "notebook"
+          - "ipykernel"
+          - "nbformat"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "05:15"
+      timezone: "Europe/Zurich"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
